@@ -7,15 +7,16 @@ import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+
 public class ExcelDataProvider {
 	
 	public XSSFWorkbook wib;
 	public ExcelDataProvider(){
-		//File src=new File("C:\\Users\\Pranay\\eclipse-workspace\\LearnHybrid\\TestData\\Data.xlsx");
+		File src=new File("./TestData/Data.xlsx");
 		
 			FileInputStream fis;
 			try {
-				fis = new FileInputStream("C:\\Users\\Pranay\\eclipse-workspace\\LearnHybrid\\TestData\\Data.xlsx");
+				fis = new FileInputStream("./TestData/Data.xlsx");
 				wib=new XSSFWorkbook(fis);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

@@ -12,7 +12,7 @@ public WebDriver driver;
 	public static WebDriver startApplication(WebDriver driver, String browserName, String reqURL) 
 	{
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver","C://Users//Pranay//Downloads//chromedriver_win32//chromedriver(104).exe");
+			System.setProperty("webdriver.chrome.driver","C://Users//Pranay//Downloads//chromedriver_win32 (2)//chromedriver.exe");
 			//WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
